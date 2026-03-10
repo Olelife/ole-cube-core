@@ -1,0 +1,12 @@
+{
+  "name": "ole-cube-core",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cubejs-server"
+  },
+  "dependencies": {
+    "@cubejs-backend/server": "^0.35.0",
+    "@cubejs-backend/bigquery-driver": "^0.35.0"
+  }
+}
