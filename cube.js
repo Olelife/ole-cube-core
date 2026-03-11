@@ -11,6 +11,8 @@ module.exports = {
     //credentials: JSON.parse(process.env.CUBEJS_DB_BQ_CREDENTIALS)
   }),
 
+  sqlPort: 15432, 
+
   scheduledRefreshContexts: () => [{
     securityContext: {}
   }],
