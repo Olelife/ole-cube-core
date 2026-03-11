@@ -13,15 +13,15 @@ spec:
         app: ole-cube-core
     spec:
       containers:
-        - name: ole-cube-core
-          image: us-central1-docker.pkg.dev/olelifetech/cube/ole-cube-core:latest
-          ports:
-            - containerPort: 4000
-            - containerPort: 15432
-          env:
-            - name: CUBEJS_API_SECRET
-              value: "olecubecorepass"
-            - name: CUBEJS_DB_TYPE
-              value: "bigquery"
-            - name: CUBEJS_DB_BQ_PROJECT_ID
-              value: "olelifetech"
+      - name: cube
+        image: gcr.io/olelifetech/ole-cube-core
+        ports:
+        - containerPort: 4000
+        - containerPort: 15432
+        env:
+        - name: CUBEJS_API_SECRET
+          value: "olecubecorepass"
+        - name: CUBEJS_DB_TYPE
+          value: "bigquery"
+        - name: CUBEJS_DB_BQ_PROJECT_ID
+          value: "olelifetech"
